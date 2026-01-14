@@ -1,40 +1,18 @@
-# \ Python 移动端商城全链路自动化测试实践
+移动端商城全栈开发实践 (Vue.js + MySQL)
 
-# 
+ 项目简介
+本项目是一个基于 Vue.js开发的响应式移动端商城系统。项目打通了从前端组件化界面到后端 MySQL 数据库存储的全链路逻辑，旨在实现流畅的商品浏览与订单交互体验。
 
-# \ 项目简介 (Context)
+ 技术栈
+[cite_start]前端: Vue.js (SPA), Vue-Router, HTML5, CSS3 [cite: 93, 95]
+[cite_start]后端/数据库: Python, MySQL [cite: 93, 94]
+[cite_start]开发工具: Git, GitHub [cite: 96]
 
-# 本项目旨在解决自研电商系统在频繁迭代中的质量保障难题。通过编写 Python 自动化脚本，模拟真实用户从“登录”到“下单”的完整业务流，并利用 MySQL 进行核心数据校验，实现 100% 的关键链路回归测试覆盖。
+ 核心功能
+1. [cite_start]组件化开发: 封装了高复用的商品卡片、导航栏等业务组件 。
+2. [cite_start]数据交互: 通过接口联调实现商品数据的动态渲染与持久化存储 [cite: 78]。
+3. [cite_start]响应式适配: 像素级适配主流智能手机屏幕 [cite: 80]。
 
-# 
-
-# \ 技术栈 (Action)
-
-# &nbsp;核心语言: Python 3.x
-
-# &nbsp;测试框架: Unittest (实现自动化脚本固件与断言)
-
-# &nbsp;数据库: MySQL (Schema 设计与数据持久化)
-
-# &nbsp;版本管理: Git / GitHub
-
-# 
-
-# \ 核心功能与技术实现 (Result)
-
-# 1\. 自动化测试流: 在 `scripts/auto\_test\_mall.py` 中实现了用户鉴权与订单生成的闭环测试，确保业务逻辑无死角。
-
-# 2\. 数据库建模: 独立设计商城的 User 与 Product 表结构，支持千万级模拟数据压测下的事务一致性。
-
-# 3\. 性能监控: 通过 Python 脚本模拟高并发下单，定位并优化了模拟环境下的逻辑瓶颈。
-
-# 
-
-# \ 目录说明
-
-# &nbsp;`/scripts`: 存放核心 Python 自动化测试脚本
-
-# &nbsp;`/data`: 存放 MySQL 数据库初始化与压测脚本
-
-# &nbsp;`/src`: 商城业务模拟代码
-
+ 目录结构
+ `/src`: 存放 `.vue` 组件与前端核心逻辑。
+ [cite_start]`/data`: 包含 MySQL 数据库初始化脚本 (`init_db.sql`) [cite: 78]。
